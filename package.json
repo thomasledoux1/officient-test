@@ -13,11 +13,13 @@
     "cors": "^2.8.4",
     "express": "~4.7.2",
     "method-override": "~2.1.2",
+    "moment": "^2.22.2",
     "mongoose": "~3.6.2",
     "morgan": "^1.9.1",
     "request": "^2.88.0",
     "vue": "^2.5.17",
     "vue-cookie": "^1.1.4",
+    "vue-moment": "^4.0.0",
     "vue-router": "^3.0.1",
     "vuetify": "^1.2.4"
   },

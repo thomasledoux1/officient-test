@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 
-var port = process.env.PORT || 4000
+var port = process.env.PORT || 5000
 
 app.listen(port) // Listen on port defined in config file
 

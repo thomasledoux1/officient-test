@@ -142,6 +142,7 @@ function callGoogleApi(directionsObj) {
         //get directions with public transport from google maps api
         googleMapsClient.directions(directionsObj, function (err, response) {
             if (err) {
+                console.log(err);
                 reject(null);
             } else {
                 resolve(response.json.routes[0].legs[0]);

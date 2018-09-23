@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueResource from 'vue-resource'
 Vue.use(VueResource);
 
-const OfficientAPI = 'http://localhost:5000/api/'
+const OfficientAPI = 'https://officient-test.herokuapp.com/api/';
 
 export default {
     getEmployees(success, error) {
@@ -37,12 +37,11 @@ export default {
             }
         )*/
     },
-    getDirections(address, success, error, toWork = null) {
-        let query = '?address=' + address;
+    getDirections(id, address, success, error, toWork = null) {
+        let query = '?id=' + id + '&address=' + address;
         if (toWork) {
             query += '&toWork=true';
         }
-        console.log(query);
         Vue.http.get(OfficientAPI + 'directions' + query).then(response => {
             success(response.body);
         }, response => {

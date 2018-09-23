@@ -30,8 +30,6 @@ var port = process.env.PORT || 5000
 
 app.listen(port) // Listen on port defined in config file
 
-console.log('App listening on port ' + port)
-
 var employeeRoutes = require('./app/routes')
 
 //  Use routes defined in Route.js and prefix it with api
@@ -51,6 +49,6 @@ app.use(function (req, res, next) {
     next()
 })
 // Server index.html page when request to the root is made
-app.get('/', function (req, res, next) {
+app.get('/', function (req, res) {
     res.sendfile('./dist/index.html')
 })

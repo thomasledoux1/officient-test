@@ -7,7 +7,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run serve && node server.js
 ```
 
 ### Run component unit tests
@@ -24,3 +24,9 @@ npm run build
 ```
 npm run lint
 ```
+
+### Run on production
+```
+node server.js
+```
+

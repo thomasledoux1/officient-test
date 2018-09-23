@@ -15,7 +15,7 @@ app.use(cors())
 var bodyParser = require('body-parser')
 
 // Sends static files  from the public path directory
-app.use(express.static(path.join(__dirname, '/public')))
+app.use(express.static(path.join(__dirname, '/dist')))
 
 // Use morgan to log request in dev mode
 app.use(morgan('dev'))

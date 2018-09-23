@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "node server.js && serve"
+    "start": "node server.js"
   },
   "dependencies": {
     "@google/maps": "^0.5.5",

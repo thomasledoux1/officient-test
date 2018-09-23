@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <h1>Officient | Overzicht medewerkers</h1>
